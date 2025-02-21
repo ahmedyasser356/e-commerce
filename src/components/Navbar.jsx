@@ -49,7 +49,6 @@ export default function Navbar() {
           <img src={logo} className="" alt=" freshcart Logo" />
         </Link>
         <button
-        
           data-collapse-toggle="navbar-default"
           type="button"
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 

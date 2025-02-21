@@ -53,7 +53,7 @@ export default function Login() {
     onSubmit: handleLogin,
     validationSchema,
   });
-  return (
+  return (<>
     <div className="md:w-2/3 mx-auto">
       <h3 className="text-h4 my-5 font-bold">Login Now :</h3>
       <Helmet>
@@ -149,5 +149,6 @@ export default function Login() {
         </button>
       </form>
     </div>
-  );
+
+</> );
 }
