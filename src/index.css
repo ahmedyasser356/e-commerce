@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Encode Sans Expanded", serif !important;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#0aad0a 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#0aad0a);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+  100%{transform: rotate(1turn)}
+}
+.loader2{
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side,#0aad0a 94%,#0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%,#0aad0a);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+  animation: l13 1s infinite linear; 
+}
+ 
+a , a:hover{
+  color: black;
+  text-decoration: none;
+ 
+}
+.product{
+  border: solid 1px #0aad0a00;
+}
+.product:hover
+{
+  
+  border: solid 1px rgba(128, 128, 128, 0.452);
+}
+.product .btn 
+{
+  transition: transform 0.7s , opacity 0.7s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn 
+{
+  opacity: 1;
+  transform: translateY(0%);
+
+}
+.font-sm
+{
+  font-size: 14px;
+}
+ /* toggle dark mode */
+ .toggle-checkbox{
+  transition: 0.5s all;
+ }
+ .toggle-label{
+  transition: 0.5s all;
+  
+ }
+.toggle-checkbox:checked {
+  @apply: right-0 border-green-400;
+  right: 0;
+  border-color: #68D391;
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-green-400;
+  background-color: #68D391;
+}
+/* slider */
+.slick-dots li.slick-active button:before{
+  color: #08e908 ;
+  opacity: 0.8;
+}
+.slick-dots li button:hover::before{
+ opacity: 1;
+ color: #08e908 !important;
+}
+.slick-dots li button:before{
+  
+  opacity: 0.9 !important;
+}
+
+.slick-prev:before, .slick-next:before{
+  color: rgb(122, 118, 118);
+}
+
+.slick-prev:hover:before, .slick-next:hover:before{
+  color: rgb(99, 190, 14);
+}
+ 
+ /* shop cart ===== num of items */
+
+ 
